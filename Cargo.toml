@@ -1,0 +1,19 @@
+[package]
+name = "chord-detector-sys"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+links = "detector-lib-bridge"
+
+[dependencies]
+libc = "0.2.147"
+
+[dev-dependencies]
+symphonia = { version = "0.5.3", features = ["mp3"] }
+
+[[example]]
+name = "detect_chord"
+path = "examples/detect_chord.rs"
+
+
+
